@@ -28,7 +28,7 @@ export default function Home() {
 
     wsref.current = ws;
 
-    ws.onopen = () => {}
+    ws.onopen = () => {console.log("Deu")}
     ws.onclose = () => {}
 
     ws.onmessage = msg =>{
