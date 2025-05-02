@@ -3,3 +3,4 @@ websockets
 schedule
 fastapi[standard]
 gTTS
+uvicorn
