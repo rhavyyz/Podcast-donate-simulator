@@ -1,4 +1,3 @@
 
-export const API_PATH : string= "http://127.0.0.1:8000";
-
-
+export const API_PATH : string= "https://podcast-donate-simulator.onrender.com/";
+export const WS_PATH : string = "wss://podcast-donate-simulator.onrender.com//register/ex"
