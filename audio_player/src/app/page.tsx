@@ -1,10 +1,8 @@
 "use client"
 import Button from "@/components/button";
-import TextFeild from "@/components/text_feild";
 import Title from "@/components/title";
 import { useEffect, useRef, useState } from "react";
 import {API_PATH, WS_PATH} from "./consts"
-// import audio from "audio.mp3";
 import useSound from "use-sound";
 
 import { AudioPlayer, Message } from "@/util/blob";
@@ -44,11 +42,13 @@ export default function Home() {
     }
 
 
-  }, [])
+  })
 
-  const ping = setInterval(()=>{
+  setInterval(()=>{
     wsref.current?.send('{"event" : "ping"}')
   }, 29000)
+
+
 
   const [stopped, setStopped] = useState<boolean | null>(null)
 
